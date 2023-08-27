@@ -1,15 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-*::before,
-*::after {
+*::after,
+*::before {
     box-sizing: inherit;
 }
 
-html, body {
+body,
+html {
     font-size: 16px;
     font-family: sans-serif;
     height: 100%;
@@ -28,7 +29,6 @@ input {
     border: none;
     outline: none;
 }
-
 input:focus {
     outline: none;
 }
@@ -40,19 +40,18 @@ button {
     cursor: pointer;
     border: 1px solid #499f5f;
 }
-
 button:focus {
     outline: none;
-    
+
 }
 
 .calculator {
     background: #212532;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: .75rem;
+    gap: 0.75rem;
     width: 325px;
-    padding: .75rem;
+    padding: 0.75rem;
     border: 1px solid #333;
     border-radius: 1rem;
     position: fixed;
@@ -63,21 +62,21 @@ button:focus {
 
 .screen {
     grid-column: 1 / 5;
-    border-radius: .75rem;
+    border-radius: 0.75rem;
     font-size: 3rem;
     height: 6rem;
     color: #18ed3c;
     background: #484f67;
     text-align: end;
-    padding: .5rem;
+    padding: 0.5rem;
 }
 
 ::placeholder {
     color: #18ed3c;
 }
 
-.symbol,
-.number {
+.number,
+.symbol {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,7 +84,7 @@ button:focus {
     aspect-ratio: 1;
     font-size: 1.25rem;
     color: #fff;
-    transition: .15s ease;
+    transition: 0.15s ease;
     border-radius: 30%;
 }
 
@@ -93,7 +92,6 @@ button:focus {
     background: #78e25d;
     color: #11131a;
 }
-
 .symbol:hover {
     background: #489435;
 }
@@ -101,7 +99,6 @@ button:focus {
 .number {
     background: #333849;
 }
-
 .number:hover {
     background: #555e79;
 }
