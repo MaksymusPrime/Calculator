@@ -16,7 +16,7 @@ html, body {
 }
 
 body {
-    background: #10131c;
+    background: #11131a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,10 +38,12 @@ button {
     outline: none;
     background: none;
     cursor: pointer;
+    border: 1px solid #499f5f;
 }
 
 button:focus {
     outline: none;
+    
 }
 
 .calculator {
@@ -62,16 +64,16 @@ button:focus {
 .screen {
     grid-column: 1 / 5;
     border-radius: .75rem;
-    font-size: 2rem;
+    font-size: 3rem;
     height: 6rem;
-    color: #fff;
-    background: #333849;
+    color: #18ed3c;
+    background: #484f67;
     text-align: end;
     padding: .5rem;
 }
 
 ::placeholder {
-    color: #fff;
+    color: #18ed3c;
 }
 
 .symbol,
@@ -88,11 +90,12 @@ button:focus {
 }
 
 .symbol {
-    background: #5d68e2;
+    background: #78e25d;
+    color: #11131a;
 }
 
 .symbol:hover {
-    background: #464fb6;
+    background: #489435;
 }
 
 .number {
